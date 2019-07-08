@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Coded Chrysalis</title>
+    <meta name="viewport" content="width=device-width" /> <!-- And they're on a different sized viewport, which is, you know, the screen size say they're on a tablet, they're on a phone, they're on a
+Device. That's one of their browsers on everything these days, refrigerators cars and so forth. I want
+My the device that's looking at my web page to reset its viewport and recognize that I may have some at media queries that need to be applied. So that's what that meta tag is doing. -->
+    <meta name="robots" content="noindex,nofollow" /> <!-- The next line robots. That's simply telling bots legitimate bots like Bing and Yahoo, Google and others don't index my page and search quite criteria and don't follow links and index them eithe -->
+    <meta charset="UTF-8">
+    <script src="https://use.fontawesome.com/6a71565c22.js"></script> <!-- That's a really great vector based icon that is super popular and great to use -->
+    <link rel="stylesheet" href="css/nav.css" />
+    <link rel="stylesheet" href="css/form.css" />
+    <link rel="stylesheet" href="css/portal.css" />
+     <!-- used for small nav -->
+</head>
+    
+<body>
+    
+    <!-- START WRAPPER -->
+    
+<main class="wrapper"> <!-- Using <main> here is just like using a <div> and is growing in popularity. -->
+<header id="top">
+    <h1><a href="index.php"><i class="logo fa fa-home"></i>Welcome to Samuel T. Phillips' WEB120 Portal</a></h1>
+    <nav>
+        <ul class="topnav" id="myTopnav">
+            <li><a href="index.html" class="selected">HOME</a></li>
+            <li><a href="big/index.php">THE BIG SHOW</a></li>
+            <li><a href="fp/index.php">FINALE!</a></li>
+            <li><a href="contactme.php">CONTACT SAMUEL</a></li>
+            <li class="icon"><a href="javascript:void(0);" onclick="myFunction()">&#9776;</a></li> <!-- for small nav -->
+        </ul>
+    </nav>
+</header>
+    
+    <!-- START LEFT COL -->
+    
+<section> <!-- is this like creating a main? -->
+    <img src="images/published.jpg" class="desktop" alt="A Publication Featuring Samuel"/>
+    
+    <img src="images/troll.jpg" class="tablet" alt="Samuel's Hand Up Fremont Troll's Nose"/>
+    
+    <h2>...a damn-good site at Seattle Central College</h2>
+    
+    <p>Drawn in by the idea of Chrysalis is something I latched onto with a death-grip at the moment of discovery. When I realized I was a Writer, an eye opened in the chest; immediately I submitted myself to this universe's eclectic spirit. Within this, I encountered the vast collections of marooned gods and goddesses charged with the same mad passion I am possessed by.</p> 
+    <p>For years I've written beside an entity making this place beautiful. Enveloped in decades of unbreakable music, the savior of poetry, halls of suspended paints and portraiture, and the extraction of emotion from thin air— forms of truth, rebellion and an indulgent independence claimed me as its own. In a fine effort to introduce the world to the company I've kept over some time, I started this thing to create a platform for the Artist by providing my hand in the styles of Web Development.</p>
+
+</section>
+    
+    <!-- END LEFT COL -->
+    
+    <!-- START RIGHT COL -->
+    
+<aside>
+    <h3><i>WHAT ELSE IS NEW?</i></h3>
+    <img src="images/samuel-and-dogs.jpg" class="phone" alt="Samuel Getting Deeply Kissed By Friend's Dog"/>
+    <p><p>Samuel T. Phillips resides in Seattle where he focuses on a bildungsroman novella of skateboarding the cities of Midwest Kentucky and Ohio, a collection of short stories, always poetry, copy-editing his first completed novel, and now furthing his know-how in the techinical arts.</p>
+</aside>
+    
+    <!-- END RIGHT COL -->
+    
+    <!-- START FOOTER -->
+    
+<footer>
+    
+    <ul>
+        <li><small><a href="#top">Back to Top</a></small></li>
+    </ul>
+        <p><small>&copy; 2019 by <a href="contactme.php" target="_blank">Samuel at Coded Chrystalis</a>, All Rights Reserved ~ <a href="http://validator.w3.org/check/referer" target="_blank">Valid HTML</a> ~ <a href="http://jigsaw.w3.org/css-validator/check?uri=referer" target="_blank">Valid CSS</a></small></p>
+</footer>
+    
+<!-- END FOOTER -->
+    
+<script>    
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += "responsive";
+    } else {
+        x.className = "topnav";
+}
+    }
+</script>
+    
+</main> 
+<!-- END WRAPPER Remember that you're using this as a div now. Get used to it! -->
+    
+</body>
+</html>

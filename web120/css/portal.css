@@ -1,0 +1,400 @@
+/* CSS FOR PORTAL */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+.wrapper {
+    margin:0 auto;
+    width:1000px;
+    
+}
+
+body{
+    background-color:cadetblue;
+    margin:20px;
+    
+}
+
+header {
+    background-color:saddlebrown;
+    
+    margin-bottom:20px;
+    border-top:solid 3px black;
+    border-left:solid 1px black;
+    overflow:hidden;
+}
+
+p {
+    padding:20px 0 20px 0;
+    line-height:1.5;
+}
+
+h1 {
+    text-align:center;
+    color:lightcyan;
+}
+
+h2 {
+    margin-top:50px
+}
+
+header a {
+    text-decoration:none;
+}
+
+/*nav {
+    padding:20px 0 10px 0;
+}
+
+nav li {
+    float:left;
+    list-style:none;
+    width:25%;
+    text-align:center;
+    background-color:black;
+    padding:10px 0 10px 0;
+    display:block;
+    
+}
+
+nav a {
+    text-decoration:none;
+    color:lightcyan;
+} */
+
+/* EXPENSIVE SAMLL NAV */
+
+ul.topnav {
+    background-color:rosybrown;
+    overflow:hidden;
+    list-style:none;
+    margin-top:10px;
+    padding:0;
+    overflow:hidden;
+}
+
+ul.topnav li {
+    float:left;
+}
+
+ul.topnav a {
+    display:inline-block;
+    color:#f2f2f2;
+    text-align:center;
+    padding:14px 16px;
+    text-decoration:none;
+    font-size:17px;
+}
+
+.topnav a:hover {
+    background-color:#555;
+}
+
+ul.topnav li.icon {
+    display:none;
+}
+
+/* END OF EXPENSIVE SMALL NAV */
+
+section {
+    float:left;
+    width:600px;
+    padding:0 20px 0 20px ;
+    background-color:tan;
+    margin-bottom:20px;
+    border:solid 3px black;
+}
+
+aside {
+    float:right;
+    width:325px;
+    background-color:tan;
+    border:solid 3px black;
+}
+
+aside h3 {
+    text-align:center;
+    background-color:saddlebrown;
+    padding:5px;
+}
+
+aside p {
+    padding:0 20px 20px 20px;
+}
+
+aside img {
+    float:right;
+    width:50%
+    
+}
+
+section img.desktop {
+    float:left;
+    padding:20px 20px 0 0;
+    width:60%;
+}
+
+footer {
+    clear:both;
+    background-color:darkgray;
+    text-align:right;
+    width:100%;
+    border-bottom:solid 3px black;
+    border-right:solid 1px black;
+    padding:10px 20px 10px 20px;
+}
+
+footer li {
+    float:left;
+    list-style:none;
+}
+
+footer p {
+    padding:0 0 0 0;
+}
+
+/* RESPONSIVE STYLES */
+
+/* DESKTOP */ 
+
+@media all and (min-width:1000px) {
+    
+    section img.desktop {
+        display:inline-block;
+        width:35%;
+    }
+    
+    main.wrapper {
+        width:80%;
+        margin:auto;
+    }
+    
+    section img.tablet, aside img.phone {
+        display:none;
+    }
+}
+
+/* TABLET */
+
+ @media all and (min-width:680px) and (max-width:999px) {
+    
+    section {
+        width:63%;
+        float:left;
+    }
+     
+     section img.tablet {
+         width:100%
+     }
+     
+     section h2 {
+         margin-top:20px;
+     }
+    
+    aside {
+        width:32%;
+        float:right;
+        margin-right:20px;
+    }
+
+    img.tablet {
+        width:60%;
+        display:inline-block;
+        margin-top:20px;
+        
+    }
+    
+    img.desktop, img.phone {
+        display:none;
+    }
+     
+     footer { 
+         width:100%;
+        padding-left:10px;
+     }
+}
+
+/* PHONE */
+
+@media all and (max-width:736px) {
+    
+    .wrapper{
+        width:100%;
+    }
+    
+    aside{
+        float:left;
+        clear:both;
+        width:100%;
+        margin-bottom:20px;
+    }
+
+img.phone{
+    float:left;
+    width:40%;
+    display:inline-block;
+    margin:20px;
+}
+
+section{
+        width:100%;
+    } 
+img.tablet, img.desktop{
+    display:none;
+}
+}
+
+ul.topnav{
+    list-style-type:none;
+    margin:0;
+    padding:0;
+    overflow:hidden;
+}
+
+ul.topnav li{
+    float:left;
+}
+
+ul.topnav li a{
+    display:inline-block;
+    color:#f2f2f2;
+    text-align:center;
+    padding:14px 16px;
+    text-decoration:none;
+    transition:0.3s;
+    font-size:17px;
+}
+
+ul.topnav li a:hover{
+    background-color:#555;
+}
+
+@media screen and (max-width:680px) {
+    
+    ul.topnav li:not(:first-child) {
+        display: none;
+    }
+    ul.topnav li.icon{
+        float:right;
+        display:inline-block;
+    }
+}
+
+@media screen and (max-width:680px) {
+    
+    ul.topnav.responsive{
+        position: relative;
+    }
+    
+    ul.topnav.responsive li.icon{
+        position:absolute;
+        right:0;
+        top:0;
+    }
+    
+    ul.topnav.responsive li{
+        float:none;
+        display:inline;
+    }
+    
+    ul.topnav.responsive li a{
+        display:block;
+        text-align:left;
+    }
+    
+}
+
+ /* @media all and (max-width:736px) {
+      
+      ul.topnav li:not(first-child){
+          display:none;
+      }
+      
+      ul.topnav li.icon{
+          display: inline-block;
+      }
+      
+      ul.topnav
+      
+      /* EXPENSIVE SMALL NAV */
+      
+    /*  ul.topnav{
+          list-style-type:none;
+          margin:0;
+          padding:0;
+          overflow:hidden;
+          background-color:#333;
+      }
+      
+      ul.topnav li{
+          float:left;
+      }
+      
+      ul.topnav li a{
+          display:inline-block;
+          color:#f2f2f2;
+          text-align:center;
+          padding:14px 16px;
+          text-decoration:none;
+          transition:0.3s;
+          font-size:17px;
+      }
+      
+      ul.topnav li a:hover{
+          background-color:#555;
+      }
+      
+      ul.topnav.responsive li.icon {
+          position:absolute;
+          right:0;
+          top:0;
+      }
+      
+      ul.topnav.responsive li {
+          float:none;
+          display:inline;
+      }
+      
+      ul.topnav.responsive li {
+          display:block;
+          text-align:left;
+      }
+      
+      ul.topnav.responsive li a{
+          display:block
+      }
+      
+      nav li {
+          padding:0
+      }
+      
+      .wrapper{
+          width:100%;
+      }
+      
+     aside {
+         float:left;
+         clear:both;
+         width:100%;
+         margin-bottom:20px;
+     }
+      
+      section {
+          width:100%
+      }
+      
+    img.phone {
+        width:40%;
+        display:inline-block;
+        float:left;
+        margin:10px
+    }
+    
+    img.tablet, img.desktop {
+        display:none;
+    }
+} */
+
