@@ -1,0 +1,171 @@
+/* CSS FOR LISA MARIE'S WEBSITE */
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 100%;
+    background-color: purple;
+    font-family: helvetica;
+}
+
+.wrapper {
+    width: 1000px;
+    margin: 0 auto;
+    background-color: wheat;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+/* BANNER */
+
+main .banner img {
+    width: 100%;
+    display: block;
+}
+
+/* BANNER END */
+
+/* NAV */
+
+nav {
+    height:50px;
+    background-color: sandybrown;
+    line-height:50px;
+}
+
+nav ul {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+nav li {
+    float: left;
+    list-style-type: none;
+    text-align: center;
+    width: 14%
+}
+
+nav li:last-of-type{ 
+    
+}
+
+nav a {
+    text-decoration: none;
+    display: block;
+}
+
+nav a:hover {
+    background-color: black;
+    color: wheat;
+    transition: 0.4s;
+}
+
+/* END OF NAVIGATION */
+
+
+
+/* SECTION */
+
+section.container {
+    width: 1000px;
+    padding: 10px 0 5px 10px;
+    background-color: white;
+    margin: 0 0 20px 0;
+}
+
+section.container img {
+    width: 175px;
+}
+
+blockquote {
+    float: right;
+    font-family:serif;
+    font-size: 1.6em;
+    width: 400px;
+    margin: 50px 100px 0 0;
+    font-style: italic;
+    
+}
+
+section {
+    width: 600px;
+    float: left;
+    margin-left: 20px;
+    
+}
+
+section p {
+    line-height: 1.5;
+    margin: 20px 0 20px 20px;
+}
+
+/* END OF SECTION */
+
+/* ASIDE */
+
+aside {
+    background-color:cadetblue;
+    width: 340px;
+    float: right;
+    margin: 0 20px 20px 0;
+    
+}
+
+aside li {
+    list-style-type: none;
+    padding: 0 0 20px 20px;
+}
+
+/* END OF ASIDE */
+
+/* TYPOGRAPHY */
+
+h1 {
+    background-color:darkred;
+    padding: 10px;
+    color: white;
+    font-weight:100;
+    text-align: center;
+}
+
+h2{
+    text-align: center;
+    padding: 10px 20px 20px 20px;
+    text-decoration: underline;
+    font-weight: 900;
+    color: black;
+}
+
+/* END OF TYPOGRAPHY */
+
+/* FOOTER */
+
+footer{
+    background-color: rosybrown;
+    height: 50px;
+    clear: both;
+    width: 1000px;
+    margin:0 auto;
+    margin-bottom: 20px;
+}
+
+footer ul{
+    text-align: center;
+}
+
+footer li{
+    display: inline-block;
+    list-style: none;
+    line-height: 50px;
+}
+
+footer li a{
+    text-decoration: none;
+    margin: 55px;
+}
+
+/* END OF FOOTER */
