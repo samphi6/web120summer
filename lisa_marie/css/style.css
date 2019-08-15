@@ -31,9 +31,13 @@ main .banner img {
 
 /* NAV */
 
-nav {
-    height:50px;
+/* header {
+    width: 100%;
+    height: 50px;
     background-color: sandybrown;
+}
+
+nav {
     line-height:50px;
 }
 
@@ -49,10 +53,6 @@ nav li {
     width: 14%
 }
 
-nav li:last-of-type{ 
-    
-}
-
 nav a {
     text-decoration: none;
     display: block;
@@ -64,20 +64,24 @@ nav a:hover {
     transition: 0.4s;
 }
 
+nav li.icon {
+    display: none;
+} */
+
 /* END OF NAVIGATION */
 
 
 
 /* SECTION */
 
-section.container {
+.container {
     width: 1000px;
     padding: 10px 0 5px 10px;
     background-color: white;
     margin: 0 0 20px 0;
 }
 
-section.container img {
+.container img {
     width: 175px;
 }
 
@@ -95,15 +99,22 @@ section {
     width: 600px;
     float: left;
     margin-left: 20px;
-    
 }
 
 section p {
     line-height: 1.5;
-    margin: 20px 0 20px 20px;
+    margin: 40px 20px 40px 20px;
 }
 
 /* END OF SECTION */
+
+/* GOOGLE CAL */
+
+iframe.cal{
+    float: right;
+    width: 34%;
+    margin-right: 20px
+}
 
 /* ASIDE */
 
@@ -112,7 +123,6 @@ aside {
     width: 340px;
     float: right;
     margin: 0 20px 20px 0;
-    
 }
 
 aside li {
@@ -122,6 +132,42 @@ aside li {
 
 /* END OF ASIDE */
 
+/* VIDEO */ /* EMBED RESPONSIVELY */
+
+.embed-container {
+    position: relative;
+    padding: 17%;
+    margin: 20px 20px 0 0;
+    height: 0; 
+    overflow: hidden;
+    max-width: 100%;
+    clear:both;
+    float:right;
+  /*  position: relative; 
+    padding-bottom: 56.25%; 
+    height: 0; overflow: hidden;
+    max-width: 50%;
+    clear: both;
+    margin-left:20px */
+}
+
+.embed-container iframe, .embed-container object, .embed-container embed { 
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    height: 100%;
+}
+
+/* MAP */
+
+.map {
+    height:50px;
+    width:100%;
+    clear:both;
+    
+}
+
 /* TYPOGRAPHY */
 
 h1 {
@@ -130,6 +176,12 @@ h1 {
     color: white;
     font-weight:100;
     text-align: center;
+    font-size: 1.8em;
+}
+
+h1 a {
+    text-decoration: none;
+    color: white;
 }
 
 h2{
@@ -140,13 +192,19 @@ h2{
     color: black;
 }
 
+section h2 {
+    text-decoration: none;
+    font-weight: 100;
+    background-color: darkred;
+    color: white;
+}
+
 /* END OF TYPOGRAPHY */
 
 /* FOOTER */
 
 footer{
     background-color: rosybrown;
-    height: 50px;
     clear: both;
     width: 1000px;
     margin:0 auto;
@@ -169,3 +227,122 @@ footer li a{
 }
 
 /* END OF FOOTER */
+
+/* MEDIA QUERY */
+
+@media screen and (max-width: 736px) {
+    
+    ul.topnav li:not(:first-child) {
+        display: none;
+    }
+    
+    ul.topnav li.icon{
+        float:right;
+        display:inline-block;
+        margin: 50px;
+    }
+    
+    ul.topnav li{
+        
+    }
+    
+    header {
+        height: 150px;
+    }
+    nav {
+        font-size: 3em;
+        margin-top: 20px;
+    }
+    
+    wrapper {
+        width: 100%;
+    }
+    
+     main .banner img {
+    display: none;
+    
+    }
+    
+    .container img {
+        width: 50%
+    }
+    
+    blockquote {
+        margin: 50px 20px 0 0;
+        font-size: 3.6em;
+    }
+    
+    h1 {
+    font-size: 3em;
+    padding: 20px;
+    width: 96%;
+    }
+    
+    h1 a {
+        text-decoration: none;
+    }
+    
+    .logo {
+        margin-right: 830px
+    }
+    
+    h2 {
+        margin-top: 40px;
+    }
+    
+    section {
+        width: 100%
+    }
+    
+    section p {
+        font-size: 3em;
+        margin:50px;
+    }
+    
+    aside {
+        clear: both;
+        width: 96%;
+        margin: 20px 20px 20px 20px;
+        font-size: 3em;
+    }
+    
+    aside li {
+        float: right;
+        margin: 20px 40px 40px 0;
+        list-style: square;
+    }
+    
+    aside ul {
+        width: 90%;
+        float: right;
+    }
+    
+    .embed-container {
+    position: relative;
+    padding: 17%;
+    margin: 10px 20px 0 0;
+    height: 0; 
+    overflow: hidden;
+    max-width: 100%;
+    clear:both;
+    float:right;
+        
+    }
+    footer {
+        font-size: 3em;
+        padding: 40px;  
+    }
+    
+    footer li{
+    list-style: none;
+    line-height: 50px;
+    display: inline;
+    }
+
+    footer li a{
+    text-decoration: none;
+    margin: 10px;
+    }
+    
+}
+    
