@@ -1,0 +1,383 @@
+/* CSS FOR LISA MARIE'S WEBSITE */
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 100%;
+    background-color: purple;
+    font-family: helvetica;
+}
+
+.wrapper {
+    width: 1000px;
+    margin: 0 auto;
+    background-color: wheat;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+/* BANNER */
+
+main .banner img {
+    width: 100%;
+    display: block;
+}
+
+/* BANNER END */
+
+/* NAV */
+
+/* header {
+    width: 100%;
+    height: 50px;
+    background-color: sandybrown;
+}
+
+nav {
+    line-height:50px;
+}
+
+nav ul {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+nav li {
+    float: left;
+    list-style-type: none;
+    text-align: center;
+    width: 14%
+}
+
+nav a {
+    text-decoration: none;
+    display: block;
+}
+
+nav a:hover {
+    background-color: black;
+    color: wheat;
+    transition: 0.4s;
+}
+
+nav li.icon {
+    display: none;
+} */
+
+/* END OF NAVIGATION */
+
+
+
+/* SECTION */
+
+.container {
+    width: 1000px;
+    padding: 10px 0 5px 10px;
+    background-color: white;
+    margin: 0 0 20px 0;
+}
+
+.container img {
+    width: 175px;
+}
+
+blockquote {
+    float: right;
+    font-family:serif;
+    font-size: 1.6em;
+    width: 400px;
+    margin: 50px 100px 0 0;
+    font-style: italic;
+    
+}
+
+section {
+    width: 600px;
+    float: left;
+    margin-left: 20px;
+}
+
+section p {
+    line-height: 1.5;
+    margin: 40px 20px 40px 20px;
+}
+
+/* END OF SECTION */
+
+/* GOOGLE CAL */
+
+.calendar{
+    margin-bottom: 40px;
+}
+
+/* ASIDE */
+
+aside {
+    background-color:cadetblue;
+    width: 340px;
+    float: right;
+    margin: 0 20px 20px 0;
+}
+
+aside li {
+    list-style-type: none;
+    padding: 0 0 20px 20px;
+}
+
+aside.research {
+    margin-top: 100px;
+}
+
+aside.research a {
+    text-decoration: none;
+    color: rebeccapurple;
+}
+
+aside.research li {
+    list-style: decimal;
+    margin-left: 20px;
+}
+
+aside.research ul {
+    margin: 20px;
+}
+
+/* END OF ASIDE */
+
+/* VIDEO */ /* EMBED RESPONSIVELY */
+
+.embed-container { 
+    position: relative; 
+    padding-bottom: 56.25%; 
+    height: 0; 
+    overflow: hidden; 
+    max-width: 100%;
+    margin-bottom: 40px;
+} 
+
+.embed-container iframe, .embed-container object, .embed-container embed { 
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    height: 100%; 
+}
+
+/* MAP */
+
+.map {
+    height:50px;
+    width:100%;
+    clear:both;
+    
+}
+
+/* TYPOGRAPHY */
+
+h1 {
+    background-color:darkred;
+    padding: 10px;
+    color: white;
+    font-weight:100;
+    text-align: center;
+    font-size: 1.8em;
+}
+
+h1 a {
+    text-decoration: none;
+    color: white;
+}
+
+h2.paper {
+    margin: 100px 0 0 20px;
+    width: 57%;
+    font-family: serif;
+    text-align: left;
+    text-decoration: none;
+    background-color: darkred;
+    color:antiquewhite;
+    float: left;
+}
+
+h2.cal {
+    margin-bottom: 20px;
+}
+
+h2{
+    text-align: center;
+    padding: 10px 20px 20px 20px;
+    text-decoration: underline;
+    font-weight: 900;
+    color: black;
+}
+
+section h2, h2.video {
+    text-decoration: none;
+    font-weight: 100;
+    background-color: darkred;
+    color: white;
+}
+
+h3 {
+    background-color: darkred;
+    padding: 10px 10px 10px 20px;
+    font-family: serif;
+    text-align: left;
+    text-decoration: none;
+    background-color: darkred;
+    color:antiquewhite;
+    margin-bottom: 20px;
+    
+}
+
+/* END OF TYPOGRAPHY */
+
+/* FOOTER */
+
+footer{
+    background-color: rosybrown;
+    clear: both;
+    width: 1000px;
+    margin:0 auto;
+    margin-bottom: 20px;
+}
+
+footer ul{
+    text-align: center;
+}
+
+footer li{
+    display: inline-block;
+    list-style: none;
+    line-height: 50px;
+}
+
+footer li a{
+    text-decoration: none;
+    margin: 55px;
+}
+
+/* END OF FOOTER */
+
+/* MEDIA QUERY */
+
+@media screen and (max-width: 736px) {
+    
+    /* LISA's HOME */
+    
+    ul.topnav li:not(:first-child) {
+        display: none;
+    }
+    
+    ul.topnav li.icon{
+        float:right;
+        display:inline-block;
+        margin: 50px;
+    }
+    
+    ul.topnav li{
+        
+    }
+    
+    header {
+        height: 150px;
+    }
+    
+    wrapper {
+        width: 100%;
+    }
+    
+     main .banner img {
+    display: none;
+    
+    }
+    
+    .container img {
+        width: 50%
+    }
+    
+    blockquote {
+        margin: 50px 20px 0 0;
+        font-size: 3.6em;
+    }
+    
+    h1 {
+    font-size: 2.5em;
+    padding: 20px;
+    width: 100%;
+    }
+    
+    h1 a {
+        text-decoration: none;
+    }
+    
+    h2.pageID {
+        width: 96%
+    }
+    
+    .logo {
+        margin-right: 830px
+    }
+    
+    h2 {
+        margin-top: 40px;
+    }
+    
+    section {
+        width: 100%
+    }
+    
+    section p {
+        font-size: 3em;
+        margin:50px;
+    }
+    
+    aside {
+        clear: both;
+        width: 96%;
+        margin: 20px 20px 20px 20px;
+        font-size: 3em;
+    }
+    
+    aside li {
+        margin: 20px 40px 40px 0;
+        list-style: square;
+    }
+    
+    aside ul {
+        width: 90%;
+        float: right;
+    }
+    
+    .embed-container {
+    position: relative;
+    padding: 17%;
+    margin: 10px 20px 0 0;
+    height: 0; 
+    overflow: hidden;
+    max-width: 100%;
+    clear:both;
+    float:right;
+        
+    }
+    footer {
+        font-size: 3em;
+        padding: 40px;  
+    }
+    
+    footer li{
+    list-style: none;
+    line-height: 50px;
+    display: inline;
+    }
+
+    footer li a{
+    text-decoration: none;
+    margin: 10px;
+    }
+    
+}
